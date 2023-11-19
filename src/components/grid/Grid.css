@@ -1,0 +1,26 @@
+.grid-section {
+  background-color: var(--background);
+  padding: 40px 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: var(--background);
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: var(--foreground);
+}
+
+/* Responsive design for the grid */
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

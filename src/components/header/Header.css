@@ -1,0 +1,71 @@
+/* Assuming you have a CSS file linked to your React component */
+
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the header */
+/* header {
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+} */
+header {
+  /* position: relative; */
+  background-color: var(--background);
+  padding: 10px 0;
+  color: var(--foreground);
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--foreground);
+}
+
+.logo img {
+  max-width: 100%; /* Make sure the logo doesn't exceed its container */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  color: var(--foreground);
+}
+
+nav a {
+  text-decoration: none;
+  color: white; /* Change to your desired text color */
+  margin: 0 15px; /* Adjust the margin as needed */
+  font-weight: bold; /* Optionally, make the text bold */
+  color: var(--foreground);
+}
+
+/* .toggle-btn {
+  display: flex;
+  align-items: center;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+} */
+
+.toggle-btn {
+  background-color: var(--background);
+  border: none;
+}
+.toggle-btn:hover {
+  background-color: var(--background);
+  border: 1px red;
+  border: var(--foreground);
+}

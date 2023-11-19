@@ -1,0 +1,73 @@
+/* Apply a box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo img {
+  max-width: 100px;
+}
+
+.footer-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin: 0 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+.footer-info {
+  text-align: right;
+}
+
+/* Responsive design for the footer */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    margin-bottom: 10px;
+  }
+
+  .footer-links ul {
+    flex-direction: column;
+  }
+
+  .footer-links li {
+    margin: 5px 0;
+  }
+}
